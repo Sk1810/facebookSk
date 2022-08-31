@@ -18,5 +18,4 @@ steps:
 - script: |
     npm install
     npm build
-    workingDirectory: '.'
   displayName: 'npm install and build'
