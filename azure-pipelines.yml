@@ -21,10 +21,10 @@ steps:
   displayName: 'npm install and build'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '.'
-    Contents: '**'
+    SourceFolder: 
+    Contents: '**/*'
     TargetFolder: '$(build.artifactstagingdirectory)'
-    CleanTargetFolder: 
+     
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
